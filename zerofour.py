@@ -12,13 +12,10 @@ from home_nmap import fill_simple_table
 
 scanner = nmap.PortScanner()
 
-# Define target IP address or hostname
 target = "scanme.nmap.org"
 
-# Run a basic scan on the target
 scanner.scan(target)
 
-# Print the scan results
 for host in scanner.all_hosts():
     print("Host: ", host)
     print("State: ", scanner[host].state())
