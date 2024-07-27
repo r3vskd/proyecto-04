@@ -1,5 +1,5 @@
 from urllib.request import urlopen
-from rich.console import Console
+from rich.console import Console # https://github.com/Textualize/rich
 from bs4 import BeautifulSoup
 from rich import print
 import nmap
@@ -12,9 +12,9 @@ import nmap
 nm = nmap.PortScanner()
 
 print("<<=============================================>>")
-print("Use the Default Gateway [bold magenta]World[]")
+print("[bold magenta] Use the Default Gateway")
 ipaddr = input("Please enter the IP address and range to scan for devices on your local network: ")
-print("The IP/range you entered is: ", ipaddr)
+print("[bold magenta] The IP/range you entered is: ", ipaddr)
 
 options = "-sn"
 
@@ -24,7 +24,7 @@ nm.command_line()
 
 print(nm.scaninfo())
 
-print("\nScan results, [bold magenta]World[/bold magenta]!", ":vampire:", locals())
+print("\n[bold magenta]Scan results: ",":vampire:")
 
 for host in nm.all_hosts():
     if nm[host].state() == 'up':
