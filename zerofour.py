@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup # se queda
 import requests # se queda
 import nmap
 import json
-import rem
+import re
 import sys
 from rich.console import Console
 # from home_nmap.home_nmap import query
