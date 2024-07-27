@@ -1,13 +1,13 @@
 from urllib.request import urlopen
-from bs4 import BeautifulSoup
-import requests
-import nmap
-import json
-import re
-import sys
 from rich.console import Console
+from bs4 import BeautifulSoup
 from rich import print
-import socket
+import nmap
+# import requests
+# import socket
+# import json
+# import sys
+# import re
 
 nm = nmap.PortScanner()
 
