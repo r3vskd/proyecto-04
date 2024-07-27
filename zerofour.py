@@ -1,13 +1,13 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
+import requests
 import nmap
+import json
+import re
+import sys
 from rich.console import Console
 from rich import print
-# import requests
-# import socket
-# import json
-# import sys
-# import re
+import socket
 
 nm = nmap.PortScanner()
 
@@ -24,7 +24,7 @@ nm.command_line()
 
 print(nm.scaninfo())
 
-print("\nScan results:")
+print("\nScan results, [bold magenta]World[/bold magenta]!", ":vampire:", locals())
 
 for host in nm.all_hosts():
     if nm[host].state() == 'up':
