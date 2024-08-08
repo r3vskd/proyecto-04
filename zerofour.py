@@ -1,5 +1,5 @@
 from urllib.request import urlopen
-from rich.console import Console # https://github.com/Textualize/rich
+from rich.console import Console ## https://github.com/Textualize/rich
 from bs4 import BeautifulSoup
 from rich import print
 import nmap
