@@ -1,1 +1,1 @@
-Scan for devices connected on your LAN
+Scan for devices connected on your LAN home network
